@@ -16,7 +16,7 @@ export default {
   },
   Stats: {
     Base: '/stats',
-    CouleurPopulaires: '/couleur',
+    CouleurPopulaires: '/couleur',//fonctionne
     MoyennePrix: '/prix' //fonctionne
   }
 } as const;

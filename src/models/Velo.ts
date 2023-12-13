@@ -42,7 +42,7 @@ const VeloSchema = new Schema<IVelo>({
 
     modele: { type: String, required: true, message: "La modele du velo est obligatoire."},
 
-    dateDeCreation: { type: Date, required:true, max: '2023-12-31', message: "La date de creation du velo est obligatoire."},
+    dateDeCreation: { type: Date, required: true, max: new Date('2023-12-31'), message: "La date de création du vélo est obligatoire." },
 
     prix: { type: Number, required: true, message: "Le prix du velo est obligatoire."},
 
