@@ -1,5 +1,5 @@
 import Velo, { IVelo } from '../models/Velo';
-
+import { connect } from 'mongoose'
 // **** Functions **** //
 
 /**
@@ -15,6 +15,7 @@ async function persists(id: string): Promise<boolean> {
  * Lire tout les velos.
  */
 async function getAll(): Promise<IVelo[]> {
+  await connect(process.env.MONGODB_URI!, {dbName:'Velo'});
   const velos = await Velo.find();
   return velos;
 }
@@ -23,6 +24,7 @@ async function getAll(): Promise<IVelo[]> {
  * Lire un velo.
  */
 async function getOne(id: string): Promise<IVelo | null> {
+  await connect(process.env.MONGODB_URI!, {dbName:'Velo'});
     const velo = await Velo.findById(id);
     console.log(velo);
     return velo;
@@ -32,6 +34,7 @@ async function getOne(id: string): Promise<IVelo | null> {
  * Lire tout les velos ayant la grandeur passé en paramètre.
  */
 async function getGrandeur(taille: string): Promise<IVelo[]> {
+  await connect(process.env.MONGODB_URI!, {dbName:'Velo'});
     const velo = await Velo.find({taille: taille});
     return velo;
 }
@@ -40,6 +43,7 @@ async function getGrandeur(taille: string): Promise<IVelo[]> {
  * Lire tout les velos ayant le type passé en paramètre
  */
 async function getType(type: string): Promise<IVelo[]> {
+  await connect(process.env.MONGODB_URI!, {dbName:'Velo'});
     const velo = await Velo.find({type: type});
     return velo;
 }
@@ -49,6 +53,7 @@ async function getType(type: string): Promise<IVelo[]> {
  * Ajoute un velo.
  */
 async function add(velo: IVelo): Promise<IVelo> {
+  await connect(process.env.MONGODB_URI!, {dbName:'Velo'});
   const nouveauVelo= new Velo(velo);
   await nouveauVelo.save();
   return nouveauVelo;
@@ -58,6 +63,7 @@ async function add(velo: IVelo): Promise<IVelo> {
  * Mets à jour un velo.
  */
 async function update(velo: IVelo): Promise<IVelo> {
+  await connect(process.env.MONGODB_URI!, {dbName:'Velo'});
   const veloAModifier = await Velo.findByIdAndUpdate(velo._id, velo);
   if (veloAModifier === null) {
     throw new Error('velo non trouvé');
@@ -70,6 +76,7 @@ async function update(velo: IVelo): Promise<IVelo> {
  * Supprimer un velo.
  */
 async function delete_(id: string): Promise<void> {
+  await connect(process.env.MONGODB_URI!, {dbName:'Velo'});
     await Velo.findByIdAndDelete(id);
   }
 
@@ -77,6 +84,7 @@ async function delete_(id: string): Promise<void> {
  * Lire les couleurs de velo les plus.
  */
 async function couleurPopulaires(): Promise<String[]> {
+  await connect(process.env.MONGODB_URI!, {dbName:'Velo'});
     const velo = await Velo.aggregate([
       {
           $unwind: "$couleurs"
@@ -111,6 +119,7 @@ async function couleurPopulaires(): Promise<String[]> {
  * Lire la moyenne de prix de tout les velos.
  */
 async function moyennePrix(): Promise<Number> {
+  await connect(process.env.MONGODB_URI!, {dbName:'Velo'});
     const moyenne = await Velo.aggregate([{
       $group: {
         _id: null,
