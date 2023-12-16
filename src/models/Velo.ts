@@ -116,7 +116,7 @@ const VeloSchema = new Schema<IVelo>({
           message: "La ou les suspensions sont obligatoires.",
     },
 
-    fonctionnel: { type: Boolean, required:true, message: "Le velo doit être fonctionnel ou non-foncitonnel."},
+    fonctionnel: { type: Boolean, message: "Le velo doit être fonctionnel ou non-foncitonnel."},
 
     couleurs: { type: [String], required: true, message: "La couleur du velo est obligatoire."},
 
