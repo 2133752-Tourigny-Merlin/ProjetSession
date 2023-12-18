@@ -81,7 +81,7 @@ async function delete_(id: string): Promise<void> {
   }
 
 /**
- * Lire les couleurs de velo les plus.
+ * Lire les couleurs de velo les plus populaire.
  */
 async function couleurPopulaires(): Promise<String[]> {
   await connect(process.env.MONGODB_URI!, {dbName:'Velo'});

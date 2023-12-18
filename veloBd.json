@@ -1,0 +1,289 @@
+[{
+  "_id": {
+    "$oid": "657c6aeead6474d1daea6f53"
+  },
+  "marque": "Trek",
+  "modele": "Madone slr",
+  "dateDeCreation": {
+    "$date": {
+      "$numberLong": "0"
+    }
+  },
+  "prix": 17499,
+  "type": "Route",
+  "taille": "M",
+  "roues": [
+    {
+      "marque": "Bontrager",
+      "grandeur": 29,
+      "tubeless": true,
+      "psiMax": 70
+    },
+    {
+      "marque": "Bontrager",
+      "grandeur": 29,
+      "tubeless": true,
+      "psiMax": 70
+    }
+  ],
+  "suspensions": [],
+  "fonctionnel": true,
+  "couleurs": [
+    "Noir",
+    "Bleu"
+  ],
+  "nbVitesse": 14
+},{
+  "_id": {
+    "$oid": "657cc6123a2970542bc45fb3"
+  },
+  "marque": "Rocky Mountain",
+  "modele": "Altitude",
+  "dateDeCreation": {
+    "$date": {
+      "$numberLong": "1643932800000"
+    }
+  },
+  "prix": 4300,
+  "type": "Montagne monté",
+  "taille": "L",
+  "roues": [
+    {
+      "marque": "Maxis",
+      "grandeur": 29,
+      "tubeless": true,
+      "psiMax": 32,
+      "_id": {
+        "$oid": "657cc6123a2970542bc45fb4"
+      }
+    },
+    {
+      "marque": "Maxis",
+      "grandeur": 29,
+      "tubeless": true,
+      "psiMax": 32,
+      "_id": {
+        "$oid": "657cc6123a2970542bc45fb5"
+      }
+    }
+  ],
+  "suspensions": [
+    {
+      "type": "Avant",
+      "marque": "Dellix",
+      "psiMin": 50,
+      "psiMax": 350,
+      "taille": 165,
+      "_id": {
+        "$oid": "657cc6123a2970542bc45fb6"
+      }
+    },
+    {
+      "type": "Arrière",
+      "marque": "Dellix",
+      "psiMin": 50,
+      "psiMax": 400,
+      "taille": 170,
+      "_id": {
+        "$oid": "657cc6123a2970542bc45fb7"
+      }
+    }
+  ],
+  "fonctionnel": true,
+  "couleurs": [
+    "Brun",
+    "Orange"
+  ],
+  "nbVitesse": 12,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "657cc727fa68c74ee26e4263"
+  },
+  "marque": "Giant",
+  "modele": "Trance",
+  "dateDeCreation": {
+    "$date": {
+      "$numberLong": "1695254400000"
+    }
+  },
+  "prix": 0,
+  "type": "Montagne descente",
+  "taille": "L",
+  "roues": [
+    {
+      "marque": "Bontrager",
+      "grandeur": 27.5,
+      "tubeless": true,
+      "psiMax": 32,
+      "_id": {
+        "$oid": "657cc727fa68c74ee26e4264"
+      }
+    },
+    {
+      "marque": "Bontrager",
+      "grandeur": 27.5,
+      "tubeless": true,
+      "psiMax": 32,
+      "_id": {
+        "$oid": "657cc727fa68c74ee26e4265"
+      }
+    }
+  ],
+  "suspensions": [
+    {
+      "type": "Avant",
+      "marque": "Dellix",
+      "psiMin": 50,
+      "psiMax": 350,
+      "taille": 165,
+      "_id": {
+        "$oid": "657cc727fa68c74ee26e4266"
+      }
+    },
+    {
+      "type": "Arrière",
+      "marque": "Dellix",
+      "psiMin": 50,
+      "psiMax": 400,
+      "taille": 170,
+      "_id": {
+        "$oid": "657cc727fa68c74ee26e4267"
+      }
+    }
+  ],
+  "fonctionnel": true,
+  "couleurs": [
+    "Noir",
+    "Vert"
+  ],
+  "nbVitesse": 8,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "657cc7a8fa68c74ee26e4270"
+  },
+  "marque": "Kink",
+  "modele": "Curb",
+  "dateDeCreation": {
+    "$date": {
+      "$numberLong": "1695254400000"
+    }
+  },
+  "prix": 400,
+  "type": "Bmx",
+  "taille": "M",
+  "roues": [
+    {
+      "marque": "Bontrager",
+      "grandeur": 20,
+      "tubeless": true,
+      "psiMax": 32,
+      "_id": {
+        "$oid": "657cc7a8fa68c74ee26e4271"
+      }
+    },
+    {
+      "marque": "Bontrager",
+      "grandeur": 20,
+      "tubeless": true,
+      "psiMax": 32,
+      "_id": {
+        "$oid": "657cc7a8fa68c74ee26e4272"
+      }
+    }
+  ],
+  "suspensions": [
+    {
+      "type": "Avant",
+      "marque": "aucune",
+      "psiMin": 1,
+      "psiMax": 1,
+      "taille": 1,
+      "_id": {
+        "$oid": "657cc7a8fa68c74ee26e4273"
+      }
+    },
+    {
+      "type": "Arrière",
+      "marque": "aucune",
+      "psiMin": 1,
+      "psiMax": 1,
+      "taille": 1,
+      "_id": {
+        "$oid": "657cc7a8fa68c74ee26e4274"
+      }
+    }
+  ],
+  "fonctionnel": true,
+  "couleurs": [
+    "Vert",
+    "Jaune",
+    "Orange"
+  ],
+  "nbVitesse": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "657cc827fa68c74ee26e4290"
+  },
+  "marque": "Reid",
+  "modele": "Classic",
+  "dateDeCreation": {
+    "$date": {
+      "$numberLong": "1474416000000"
+    }
+  },
+  "prix": 400,
+  "type": "Ville",
+  "taille": "TL",
+  "roues": [
+    {
+      "marque": "Bontrager",
+      "grandeur": 29,
+      "tubeless": true,
+      "psiMax": 32,
+      "_id": {
+        "$oid": "657cc827fa68c74ee26e4291"
+      }
+    },
+    {
+      "marque": "Bontrager",
+      "grandeur": 29,
+      "tubeless": true,
+      "psiMax": 32,
+      "_id": {
+        "$oid": "657cc827fa68c74ee26e4292"
+      }
+    }
+  ],
+  "suspensions": [
+    {
+      "type": "Avant",
+      "marque": "aucune",
+      "psiMin": 1,
+      "psiMax": 1,
+      "taille": 1,
+      "_id": {
+        "$oid": "657cc827fa68c74ee26e4293"
+      }
+    },
+    {
+      "type": "Arrière",
+      "marque": "aucune",
+      "psiMin": 1,
+      "psiMax": 1,
+      "taille": 1,
+      "_id": {
+        "$oid": "657cc827fa68c74ee26e4294"
+      }
+    }
+  ],
+  "fonctionnel": true,
+  "couleurs": [
+    "Bleu",
+    "Orange"
+  ],
+  "nbVitesse": 32,
+  "__v": 0
+}]
